@@ -1,18 +1,23 @@
 #include "main.h"
 
 /**
- * print_most_numbers - print numbers between 0 to 9
- * (either 2 nor 4)
+ * more_numbers - nmbr fct
+ * more_numbers
  * Return: no return
  */
-void print_most_numbers(void)
-{
-	int ch;
 
-	for (ch = 48; ch < 58; ch++)
+void more_numbers(void)
+{
+
+int i, j;
+	for (i = 1; i <= 10; i++)
 	{
-		if (ch != 50 && ch != 52)
-			_putchar (ch);
-	}
-	_putchar('\n')
+		for (j = 0; j <= 14; j++)
+		{
+			if (j >= 10)
+			_putchar('1');
+			_putchar(j % 10 + '0');
+		}
+			_putchar('\n');
+		}
 }
