@@ -1,1 +1,1 @@
-This is a redme.md file for singly linked lists
+This is a README.md file for singly linked lists
